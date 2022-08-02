@@ -15,6 +15,7 @@
 		"sourceMap": true,
 		"strict": true,
 		"useDefineForClassFields": true,
+		"types": ["vite-plugin-solid-svg"],
 	},
 	"include": ["./src"]
 }

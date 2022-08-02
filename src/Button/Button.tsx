@@ -1,5 +1,5 @@
 import {For} from "solid-js"
-
+import CircleIcon from "./circle.svg?component"
 
 export namespace Button{
 	export interface Props{
@@ -14,6 +14,7 @@ export function Button({count}:Button.Props){
 		<For each={labels}>{(label) => (
 			<button>
 				{label}
+				<CircleIcon />
 			</button>
 		)}</For>
 	)

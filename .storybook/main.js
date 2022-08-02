@@ -1,4 +1,5 @@
 const Solid = require("vite-plugin-solid")
+const solidSvg = require("vite-plugin-solid-svg");
 
 module.exports = {
 
@@ -20,6 +21,7 @@ module.exports = {
   async viteFinal(config, {configType}){
 		config.plugins.unshift(
 			Solid({hot:false}),
+      solidSvg(),
 		)
 
     return config
